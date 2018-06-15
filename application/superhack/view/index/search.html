@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据查看</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="text">
+            <center><h1>已报名参加安全培训人员</h1></center>
+        </div>
+
+        <div class="span2">
+        </div>
+        <div class="span8">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>email</th>
+                    <th>time</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                    {volist name="data" id="data_for"}
+                <tr>
+                    <td>{$data_for.username}</td>
+                    <td>{$data_for.time}</td>
+                </tr>
+                    {/volist}
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="span2">
+        </div>
+    </div>
+</div>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
