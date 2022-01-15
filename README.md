@@ -9,5 +9,5 @@
 详见：SDL China文档
 
 ```
-https://www.sdlchina.org.cn/6.project/SDL-1.内部钓鱼系统/
+https://www.securitypaper.org/6.project/SDL-1.内部钓鱼系统/
 ```
